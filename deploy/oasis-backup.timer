@@ -1,0 +1,11 @@
+# Example only: adapt user, paths, environment file, and resource limits.
+[Unit]
+Description=Daily Oasis backup
+
+[Timer]
+OnCalendar=*-*-* 03:10:00
+RandomizedDelaySec=300
+Persistent=true
+
+[Install]
+WantedBy=timers.target

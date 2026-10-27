@@ -1,0 +1,31 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "oasinsinc",
+  "main": "server/index.ts",
+  "compatibility_date": "2026-09-11",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": false,
+  "preview_urls": false,
+  "send_metrics": false,
+  "assets": {"directory": "dist", "binding": "ASSETS", "run_worker_first": true},
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "oasis",
+      "database_id": "00000000-0000-0000-0000-000000000000",
+      "migrations_dir": "drizzle"
+    }
+  ],
+  "send_email": [{"name": "EMAIL"}],
+  "vars": {
+    "APP_ORIGIN": "http://localhost:4173",
+    "APP_ENV": "development",
+    "EMAIL_FROM": "Oasis <conta@example.com>",
+    "EMAIL_ENABLED": "false",
+    "TURNSTILE_SITE_KEY": "",
+    "VAPID_PUBLIC_KEY": "",
+    "VAPID_SUBJECT": "http://localhost:4173"
+  },
+  "triggers": {"crons": ["* * * * *"]},
+  "observability": {"enabled": false}
+}

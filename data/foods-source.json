@@ -1,0 +1,85 @@
+{
+  "source": "NEPA/Unicamp · TACO",
+  "url": "https://nepa.unicamp.br/publicacoes/tabela-taco-excel/",
+  "sha256": "a66b8ec528daeabc63bc2b015fc9bd8c6d76b941c2fc0ed93a4311d449302d14",
+  "basis": "100 g edible portion in the preparation described",
+  "rounding": "2 decimal places; Tr estimated as zero and identified; unavailable values excluded",
+  "count": 582,
+  "omitted": [
+    {
+      "id": 259,
+      "name": "Azeite, de dendê",
+      "reason": "Incomplete energy or macronutrients"
+    },
+    {
+      "id": 260,
+      "name": "Azeite, de oliva, extra virgem",
+      "reason": "Incomplete energy or macronutrients"
+    },
+    {
+      "id": 267,
+      "name": "Óleo, de babaçu",
+      "reason": "Incomplete energy or macronutrients"
+    },
+    {
+      "id": 268,
+      "name": "Óleo, de canola",
+      "reason": "Incomplete energy or macronutrients"
+    },
+    {
+      "id": 269,
+      "name": "Óleo, de girassol",
+      "reason": "Incomplete energy or macronutrients"
+    },
+    {
+      "id": 270,
+      "name": "Óleo, de milho",
+      "reason": "Incomplete energy or macronutrients"
+    },
+    {
+      "id": 271,
+      "name": "Óleo, de pequi",
+      "reason": "Incomplete energy or macronutrients"
+    },
+    {
+      "id": 272,
+      "name": "Óleo, de soja",
+      "reason": "Incomplete energy or macronutrients"
+    },
+    {
+      "id": 450,
+      "name": "Iogurte, sabor abacaxi",
+      "reason": "Incomplete energy or macronutrients"
+    },
+    {
+      "id": 457,
+      "name": "Leite, de vaca, desnatado, UHT",
+      "reason": "Incomplete energy or macronutrients"
+    },
+    {
+      "id": 458,
+      "name": "Leite, de vaca, integral",
+      "reason": "Incomplete energy or macronutrients"
+    },
+    {
+      "id": 472,
+      "name": "Cana, aguardente 1",
+      "reason": "Incomplete energy or macronutrients"
+    },
+    {
+      "id": 516,
+      "name": "Sal, dietético",
+      "reason": "Incomplete energy or macronutrients"
+    },
+    {
+      "id": 517,
+      "name": "Sal, grosso",
+      "reason": "Incomplete energy or macronutrients"
+    },
+    {
+      "id": 591,
+      "name": "Coco,  verde, cru",
+      "reason": "Incomplete energy or macronutrients"
+    }
+  ]
+}

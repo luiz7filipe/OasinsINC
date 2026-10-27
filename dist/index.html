@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link rel="manifest" href="manifest.webmanifest"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Oasis"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="theme-color" content="#f5f7f5"><meta name="description" content="Sua rotina saudável em um só lugar. Organize treinos, registre refeições, acompanhe sua água e veja sua evolução no Oasis.">
+  <title>Oasis · Sua rotina, seu ritmo</title>
+  <link rel="apple-touch-icon" href="/logo-oasis.png"><link rel="icon" href="/logo-oasis.png" type="image/png">
+  <script src="/theme.js?v=20260911-5"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;500;600;650;700;750;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/foods.css?v=20260911-7"><link rel="stylesheet" href="/plans.css?v=20260911-6"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="oasis.css"><link rel="stylesheet" href="entry.css?v=20260911-3"><link rel="stylesheet" href="/theme.css?v=20260911-5"><link rel="stylesheet" href="/simple.css?v=20260911-8"><script src="/startup.js?v=20260911-8" defer></script>
+</head>
+<body class="app-locked">
+<div id="splash-screen" class="splash-screen" hidden role="status" aria-label="Carregando Oasis"><img class="splash-logo" src="/logo-oasis.png" alt="Oasis"><div class="splash-bottom"><span class="splash-spinner" aria-hidden="true"></span><span class="splash-label">Carregando seu espaço</span></div></div>
+<section id="auth-screen" class="auth-screen"><div id="auth-content" class="auth-content"><div class="entry-welcome-bottom"><h1>Seu espaço de cuidado.</h1><p class="entry-description">Se a Oasis não abrir, confira sua conexão e tente novamente.</p><a class="primary-button full-width" href="/">Tentar novamente</a></div></div></section>
+<noscript><style>#splash-screen{display:none}</style>Ative o JavaScript para usar sua Oasis.</noscript>
+<aside class="sidebar">
+  <a class="brand" href="#hoje" aria-label="Oasis, início"><span class="brand-symbol"><img src="/logo-oasis.png" alt=""></span>oasis<span class="brand-dot">.</span></a>
+  <div class="workspace-label">MINHA ROTINA</div>
+  <nav class="side-nav" aria-label="Navegação principal"><button data-view="hoje"><i data-lucide="house"></i>Hoje</button><button data-view="alimentacao"><i data-lucide="utensils"></i>Comida</button><button data-view="treino"><i data-lucide="dumbbell"></i>Treino</button><button data-view="evolucao"><i data-lucide="weight"></i>Peso</button><button data-view="conta"><i data-lucide="settings"></i>Mais</button></nav>
+  <button class="profile" data-view="conta"><span class="avatar">V</span><span><strong>Meu espaço</strong><small>Metas e preferências</small></span><i data-lucide="chevrons-up-down"></i></button>
+</aside>
+<div class="app-shell">
+  <header class="topbar"><span class="breadcrumb">Meu espaço <span>/</span> <strong id="page-name">Hoje</strong></span><a class="brand mobile-brand" href="#hoje"><span class="brand-symbol"><img src="/logo-oasis.png" alt=""></span>oasis<span class="brand-dot">.</span></a><div class="topbar-right"><span class="demo-label"><span></span>Modo demonstração</span><button class="simple-header-reminders" data-view="lembretes"><i data-lucide="bell"></i><span>Lembretes</span></button></div></header>
+  <main id="main" tabindex="-1"></main>
+
+</div>
+<nav class="bottom-nav simple-bottom-nav" aria-label="Navegação mobile"><button data-view="hoje"><i data-lucide="house"></i><span>Hoje</span></button><button data-view="alimentacao"><i data-lucide="utensils"></i><span>Comida</span></button><button data-view="treino"><i data-lucide="dumbbell"></i><span>Treino</span></button><button data-view="evolucao"><i data-lucide="weight"></i><span>Peso</span></button><button data-view="conta"><i data-lucide="settings"></i><span>Mais</span></button></nav>
+<dialog id="modal" aria-labelledby="modal-title"><div id="modal-body"></div></dialog><div id="toast" role="status" aria-live="polite"></div>
+</body></html>

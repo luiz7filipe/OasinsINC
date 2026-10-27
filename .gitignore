@@ -1,0 +1,32 @@
+# Dependencies and generated output
+node_modules/
+build/
+worker-configuration.d.ts
+dist/account.js
+dist/account.js.LEGAL.txt
+
+# Runtime state, credentials, and deployment artifacts
+.env
+.env.*
+!.env.example
+.dev.vars*
+.wrangler/
+.openai/
+.sites-runtime/
+.local/
+.data/
+backups/
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.log
+*.pem
+*.key
+*.p12
+*.pfx
+*.zip
+*.tar
+*.tar.gz
+.DS_Store
+Thumbs.db

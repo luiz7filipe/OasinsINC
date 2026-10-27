@@ -1,0 +1,25 @@
+{
+  "id": "/",
+  "name": "Oasis — sua rotina saudável",
+  "short_name": "Oasis",
+  "description": "Sua rotina, seus lembretes e seu espaço de cuidado.",
+  "lang": "pt-BR",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#003c2a",
+  "theme_color": "#003c2a",
+  "icons": [
+    {
+      "src": "/logo-oasis.png",
+      "sizes": "1280x1280",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": [
+    "health",
+    "fitness",
+    "lifestyle"
+  ]
+}

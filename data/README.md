@@ -1,0 +1,5 @@
+Alimentos importados diretamente da planilha oficial TACO disponibilizada pelo Núcleo de Estudos e Pesquisas em Alimentação (NEPA), Universidade Estadual de Campinas (Unicamp): https://nepa.unicamp.br/publicacoes/tabela-taco-excel/.
+
+A publicação permite reprodução total ou parcial com citação da fonte (TACO, 4ª edição revisada e ampliada, 2011, pp. ii–iii). A interface mantém a atribuição e o link. O arquivo `foods-source.json` registra a origem, checksum do download e linhas excluídas. O importador é `scripts/import-taco.py` (Python, biblioteca padrão).
+
+Valores por 100 g da parte comestível, no preparo descrito. A planilha contém valores analíticos com mais casas decimais que o PDF; guardamos duas casas. Traços e resíduos negativos de carboidrato entre -0,1 e 0 g são aproximados como zero e sinalizados como traços. Dados ausentes, não analisados ou não numéricos não viram zero: quinze registros incompletos foram excluídos. A base oferece 582 registros para cálculo automático. Não representa todas as marcas ou receitas possíveis.

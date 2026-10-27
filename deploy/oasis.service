@@ -1,0 +1,36 @@
+# Example only: adapt user, paths, environment file, and resource limits.
+[Unit]
+Description=Oasis private health routine
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=60
+StartLimitBurst=5
+
+[Service]
+Type=simple
+User=oasis
+Group=oasis
+WorkingDirectory=/opt/oasinsinc/current
+EnvironmentFile=/etc/oasinsinc/app.env
+ExecStart=/opt/oasinsinc/runtime/bin/node /opt/oasinsinc/current/server.mjs
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/oasinsinc
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+CapabilityBoundingSet=
+MemoryMax=512M
+CPUQuota=50%
+TasksMax=64
+
+[Install]
+WantedBy=multi-user.target

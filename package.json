@@ -1,0 +1,48 @@
+{
+  "name": "oasinsinc",
+  "version": "0.2.0",
+  "private": true,
+  "overrides": {
+    "@esbuild-kit/core-utils": {
+      "esbuild": "^0.28.2"
+    }
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --local --ip 127.0.0.1 --port 4173",
+    "build": "node scripts/build.mjs",
+    "typecheck": "npm run types && tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:local": "wrangler d1 migrations apply oasis --local",
+    "deploy:cloudflare": "node scripts/deploy-check.mjs && npm run build && wrangler deploy",
+    "start:vps": "node build/vps/server.mjs",
+    "setup:local": "node scripts/setup-local.mjs",
+    "types": "wrangler types --strict-vars false"
+  },
+  "dependencies": {
+    "@block65/webcrypto-web-push": "^2.0.0",
+    "@js-temporal/polyfill": "^0.5.1",
+    "better-auth": "^1.7.4",
+    "drizzle-orm": "^0.45.2",
+    "nodemailer": "^10.0.3",
+    "qrcode": "^1.5.4",
+    "zod": "^4.6.2"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260911.1",
+    "@types/node": "^22.20.2",
+    "@types/nodemailer": "^8.0.1",
+    "@types/qrcode": "^1.5.6",
+    "drizzle-kit": "^0.31.10",
+    "esbuild": "^0.28.2",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2",
+    "wrangler": "^4.131.0"
+  },
+  "description": "Oasis: aplicação de rotina alimentar, calorias, hidratação, peso e lembretes, em português.",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=24"
+  }
+}
